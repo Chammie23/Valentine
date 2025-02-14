@@ -1,0 +1,86 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #cddff4; /* Màu xanh nhạt */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px;
+}
+
+
+/* Hình ảnh */
+.imagebox {
+    width: 250px;
+    height: 300px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.imagebox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bàn phím số */
+
+.keypad-title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.keypad {
+    width: 300px;
+    height: 300px;
+}
+
+.display {
+    padding: 10px;
+    width: 280px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    border: none;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Các nút bấm */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.keys button {
+    padding: 10px;
+    font-size: 23px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.keys button:hover {
+    background: #b0c4de;
+}

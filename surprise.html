@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To anhcuabe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").hide();
+        });
+    });
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Trình phát nhạc -->
+        <div class="music-player">
+            <img src="./images/coverplaylist.jpg" class="thumbnail">
+            <div class="music-info">
+                <h3 class="song-title">Từ ngày em đến - Da LAB</h3>
+                <audio id="audio" src="C:/ValentineGift/TuNgayEmDen-DaLAB-8056548.mp3"></audio>
+                <div class="controls">
+                    <button id="prev">⏮</button>
+                    <button id="play">▶</button>
+                    <button id="next">⏭</button>
+                </div>
+                <input type="range" id="progress" value="0">
+            </div>
+        </div>
+
+        <!-- Phong bì thư -->
+        <div class="letter-container">  
+            <div class="valentines">
+              <div class="envelope"></div>
+              <div class="front"></div>
+              <div class="card">
+              <div class="text">Thanks for coming and love me</br> Happy our first Valentine!</br>Love you.</div>
+              <div class="heart"></div>
+              <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+              </div>
+            </div>
+            </div>
+            <div class="shadow"></div>
+            </div>
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
+
